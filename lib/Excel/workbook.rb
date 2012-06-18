@@ -1,4 +1,4 @@
-require 'worksheet'
+require 'excel/worksheet'
 
 module Excel
   class WorkBook
