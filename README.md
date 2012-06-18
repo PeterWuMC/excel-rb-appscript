@@ -1,7 +1,7 @@
 # Excel rb-appscript
 
-	This is just an extension on rb-appscript, for Excel.
-	Because of the lack of documentation how to use Ruby - Apple Script on Excel, the idea is to have some of most frequently used excel dictionary/actions.
+This is just an extension on rb-appscript, for Excel.
+Because of the lack of documentation how to use Ruby - Apple Script on Excel, the idea is to have some of most frequently used excel dictionary/actions.
 
 
 ## Excel Structure
