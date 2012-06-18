@@ -1,4 +1,5 @@
 require 'appscript'
+require 'workbook'
 
 module Excel
   class App

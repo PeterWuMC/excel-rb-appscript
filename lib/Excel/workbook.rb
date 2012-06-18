@@ -1,3 +1,5 @@
+require 'worksheet'
+
 module Excel
   class WorkBook
     @app_object = nil
