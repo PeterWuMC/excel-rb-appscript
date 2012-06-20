@@ -26,10 +26,12 @@ module Excel
     end
   
     def self.workbooks
+      return [] if app_object.workbooks.get == :missing_value
       app_object.workbooks.get.collect {|wb| wb.name.get }
     end
     
     def self.workbooks_paths
+      return [] if app_object.workbooks.get == :missing_value
       app_object.workbooks.get.collect {|wb| "#{wb.path.get}:#{wb.name.get}" }
     end
   
