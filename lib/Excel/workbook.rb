@@ -18,6 +18,11 @@ module Excel
     def self.app_object
       @app_object.app_object
     end
+    
+    def self.close
+      app_object.workbooks[workbook_name].saved.set(true)
+      app_object.workbooks[workbook_name].close
+    end
   
     def self.worksheets
       app_object.workbooks[workbook_name].worksheets.get.collect {|ws| ws.name.get }
