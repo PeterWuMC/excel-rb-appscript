@@ -32,7 +32,7 @@ module Excel
     
     def self.workbooks_paths
       return [] if app_object.workbooks.get == :missing_value
-      app_object.workbooks.get.collect {|wb| "#{wb.path.get}:#{wb.name.get}" }
+      app_object.workbooks.get.collect {|wb| "#{MacTypes::FileURL.hfs_path(wb.path.get).path}/#{wb.name.get}" }
     end
   
     def self.workbook wb
