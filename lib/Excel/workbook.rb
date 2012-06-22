@@ -32,5 +32,9 @@ module Excel
       # raise "Worksheet not found" if !(worksheets.include? ws)
       WorkSheet.new(self, ws)
     end
+    
+    def self.save
+      app_object.workbooks[workbook_name].save
+    end
   end
 end

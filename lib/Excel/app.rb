@@ -47,5 +47,9 @@ module Excel
       app_object.workbooks.close
       app_object.quit
     end
+    
+    def self.save_all
+      app_object.save
+    end
   end
 end

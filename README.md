@@ -19,13 +19,19 @@ Because of the lack of documentations on how to use Ruby - Apple Script on Excel
 	Return the workbook name which it opened
 	
 	Excel::App.close
-	Close the file and shut down Excel
+	Close the file and shut down Excel without saving
 	
 	Excel::App.workbooks
 	Return an array of all the opened workbooks
 	
+	Excel::App.workbooks_paths
+	Return an array of all the paths for opened workbooks
+	
 	Excel::App.workbook(workbook_name)
 	Return the Workbook object
+	
+	Excel::App.save_all
+	Save all opened workbook
 	
 ### Workbook
 
@@ -34,6 +40,12 @@ Because of the lack of documentations on how to use Ruby - Apple Script on Excel
 	
 	Excel::App.workbook("workbook.xls").worksheet(worksheet_name)
 	Return the Worksheet object
+	
+	Excel::App.workbook("workbook.xls").close
+	Close "workbook.xls" without saving
+	
+	Excel::App.workbook("workbook.xls").save
+	Save "workbook.xls"
 
 ### Worksheet
 
