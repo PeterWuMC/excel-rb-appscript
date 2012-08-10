@@ -11,10 +11,10 @@ Gem::Specification.new do |gem|
   # gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.name          = "excel-rb-appscript"
   gem.require_paths = ["lib"]
-  gem.version       = "0.0.7"
-  
-  
-  gem.add_runtime_dependency "rb-appscript"
-  
-  
+  gem.version       = "0.0.8"
+
+
+  gem.add_runtime_dependency "rb-appscript", '0.6.1'
+
+
 end
